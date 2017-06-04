@@ -4,20 +4,11 @@
 // 
 // This software is in the public domain.
 
-#include "llvm/DebugInfo.h"
-#include "llvm/Pass.h"
-#include "llvm/PassManager.h"
-#include "llvm/Analysis/AliasAnalysis.h"
-#include "llvm/Analysis/Passes.h"
 #include "llvm/IR/Constants.h"
 #include "llvm/IR/Function.h"
-#include "llvm/IR/GlobalVariable.h"
 #include "llvm/IR/LLVMContext.h"
 #include "llvm/IR/Module.h"
-#include "llvm/IRReader/IRReader.h"
-#include "llvm/LinkAllPasses.h"
 #include "llvm/Support/raw_ostream.h"
-#include "llvm/Support/SourceMgr.h"
 
 int main(int argc, char **argv) {
   llvm::LLVMContext &context = llvm::getGlobalContext();
